@@ -1,17 +1,18 @@
 <!--Unit 4 Project
 Requirements
-[ ] Three Distinct CSS font-family Declarations
-[ ] Five CSS Rules
-[ ] An Unordered **or** Ordered List (<ul> or <ol>)
+[ yes] Three Distinct CSS font-family Declarations
+[ yes] Five CSS Rules
+[ yes] An Unordered **or** Ordered List (<ul> or <ol>)
 [ ] Three Images
 
 Select ONE Additional Feature to Add  
 [ no ] Feature 1 - Fill Text with Image Background 
 [ no ] Feature 2 - Change the <li> markers
 [ no ] Feature 3 - Change the Favicon
-[ no ] Feature 4 - Use Google Font or Uploaded Font
+[ yes ] Feature 4 - Use Google Font or Uploaded Font
 [ no ] Feature 5 - Change the Cursor
 -->
+
 
 <!DOCTYPE html>
 <html>
@@ -20,40 +21,76 @@ Select ONE Additional Feature to Add
   <title>Unit 4 Project</title>
   <meta charset="utf-8">
   <style>
-
-    #heartspine {
-      font-family: "Courier New", Courier, monospace;
-      font-size: 10px;
-    }
-
+  @import url('https://fonts.googleapis.com/css2?family=Freckle+Face&family=Irish+Grover&family=Jacquarda+Bastarda+9&family=Love+Ya+Like+A+Sister&family=Redaction+35:ital,wght@0,400;0,700;1,400&family=Redaction+50:ital,wght@0,400;0,700;1,400&family=Special+Elite&family=UnifrakturMaguntia&display=swap');
+      .description {
+      font-family: "Special Elite";
+      font-size: 12px;
+      line-height: 1.2}
+    p { line-height: 0.9; }
+    #description {
+      font-family: "Arial", sans-serif;
+      font-size: 13px;
+      line-height: 1.2}
+    #maintitle {line-height: 0.5;
+      font-family: "Redaction 35"; 
+      font-size: 30px;}
+    #smtitle {line-height: 0.9;
+      font-family: "Redaction 50"; 
+      font-size: 25px;}
+    #hstitle {line-height: 0.9;
+        font-family: "Love Ya Like A Sister"; 
+        font-size: 25px;}
+    #awtitle {line-height: 0.9;
+        font-family: "Freckle Face"; 
+        font-size: 25px;
+        font-weight: normal;}
   </style>
 </head>
 <body>
-
-  <h1>A Guide to Porozhatgrad! </h1>
-  <p>by Connie, the world's best urban explorer~</p>
-  <p>Archived on exploringthedeadworld.archive.net</p>
-  
-  <h3>Heartspine hospital!</h3>
+  <p>Archived on <a href= https://www.youtube.com/watch?v=dQw4w9WgXcQ>Abandoned-America.archive.net</a> by b1tr4t</p>
   <hr>
-  <p id="heartspine">Welcome to Heartspine Hospital! Heartspine hospital was a notorious, 
-    elite hospital that managed to treat even the sickest of sick- if enough money was paid. The hospital, now abandoned,
-    was once one of the most highly funded hospitals in the country- A-list celebrities, politicians, even royalty
-    flew oceans to be treated here. Unfortunately, it experienced a series of controversies involving its connections
-    to an underground organ market and missing elite patients. To this day, no concrete information was ever released
-    despite investigations conducted years xxxx-xxxx. The hospital is now a shell of its former glory, its pristine architecture
-    slowing breaking down as diseases and decay seem to grow themselves outside of their containment.
+  <h1 id = "maintitle">A Guide to Porozhatgrad! </h1>
+  <p id = "description">by the one and only CONNIE, the world's best urban explorer to ever live!!!</p>
+  <p class = "description">So... you ever heard of <strong>Porozhatgrad?!</strong> No?! Well then, <em>you've come to the right place!!!</em>
+  <strong>Today's vlog is about this really beautiful dead town I found on the edge of the Barents Sea!!!</strong></p>
+  <p class = "description"> So, I'm gonna show y'all some areas I visited (or at least whatever I could endure before the stench
+    got to me) so you guys can get a lot at what this glorious town was like before it was abandoned!!! <br>It's kinda sad that
+    I only found it through some decades-old scammy ads online, but hey... that means I found it- and one way or another, maybe it
+    was meant to be- 'cause this place really is a lot more interesting than I would've thought!</p>
+    <ol>
+    <li><a href="#hstitle">kewl hospital</a></li>
+    <li><a href="#smtitle">YUCK</a></li>
+    <li><a href="#awtitle">rat civilization!</a></li>
+    </ol>
+  </p>
+  <hr>
+  <h3 id="hstitle">Heartspine Hospital!</h3>
+  <p class="description">So, <em>this</em> is the once-glorious, world-famous Heartspine! Heartspine Hospital
+  used to be one of the country's most well-funded medical centers. Apparently, it was exposed for having some
+  sorta illicit connections to organ farms, which is why it's totally dead now. It's kinda sad- this place
+  used to cure the sickest of the sick... well, if they had the money! Wait... for a hospital that only seemed to cure
+  old rich and evil people, maybe it had to go, actually?</p>
   <br><br>
 
-  <h3>The supermarket!</h3>
   <hr>
-  <p>About Content Element #2</p>
+  <h3 id="smtitle">ABOMINABLE SUPERMARKET!</h3>
+  <p class="description">Porozhatgrad's once-busy and bustling markets and now filled with total rats and decay
+    instead of people! Just walking into Porozhatgrad, I could smell the awful stench of the decades-old
+    meat rotting. No wonder nobody wants to revive this dead town- the stench would be unbearable to work
+    through for any normal person!!! Heh... but me? I'm the most dedicated urban journalist ever, and I only
+    document the coolest places for you guys!
+  </p>
   <br><br>
 
-  <h3>The alleyways...</h3>
   <hr>
-  <p>The alleyways are the <em>most</em> filled with life in a town dead like this.</p>
-  <br><br>
+  <h3 id="awtitle">Scary Alleyways...</h3>
+  <p class="description">If there's one thing I love besides scary rooftops...
+    IT'S SCARY ALLEYWAYS!!! The alleyways are the <em>most</em> filled with life in a town dead like this.
+    There's these cute adorable little rats everywhere! There was one that started nibbing at my
+    shoe, probably because I was the first living, walking, normal flesh in this place
+    in a long time. Or maybe it's my incredible aura. I wonder if the rats ever talk to each other about me,
+    since I've explored so many abandoned urban areas and met so many of these guys!</p>
+    <br><br>
 
 </body>
 </html>
